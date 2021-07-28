@@ -2,27 +2,8 @@
 
 const int MAX = 1e5+7;
 
-// bool isp[MAX+10];
-// std::vector<long long> primes;
-
-// void sieve()
-// {
-//     isp[1] = true;
-//     for(int i = 4 ; i <= MAX ; i += 2)
-//         isp[i] = true;
-//     for(int i = 3 ; i*i <= MAX ; i += 2)
-//         if(isp[i] == false)
-//             for(int j = i*i ; j <= MAX ; j += (i+i))
-//                 isp[j] = true;
-//     primes.push_back(2);
-//     for(int i = 3 ; i <= MAX ; i += 2)
-//         if(isp[i] == false)
-//             primes.push_back(i);
-// }
-
 std::vector<char> is_prime(MAX, true);
 std::vector<int64_t> primes;
-
 
 void sieve () {
     //Finding out the primes in simple way
